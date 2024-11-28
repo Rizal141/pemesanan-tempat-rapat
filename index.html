@@ -1,0 +1,61 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Pemesanan Tempat Rapat</title>
+  <link href="styles.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <img alt="Logo" class="logo" height="50" src="logo dlh.png" width="50"/>
+      <h1>Pemesanan Tempat Rapat</h1>
+    </div>
+
+    <!-- Kalender Pemesanan -->
+    <div class="calendar-container">
+      <h2>Kalender Pemesanan</h2>
+      <div class="calendar-grid">
+        <div>Minggu</div>
+        <div>Senin</div>
+        <div>Selasa</div>
+        <div>Rabu</div>
+        <div>Kamis</div>
+        <div>Jumat</div>
+        <div>Sabtu</div>
+      </div>
+      <div id="calendar" class="calendar-grid"></div>
+    </div>
+
+    <!-- Form Pemesanan -->
+    <div class="form-container">
+      <h2>Isi Pemesanan</h2>
+      <form id="booking-form">
+        <div>
+          <label for="name">Nama:</label>
+          <input id="name" type="text" placeholder="Masukkan nama Anda" required/>
+        </div>
+        <div>
+          <label for="field">Bidang:</label>
+          <input id="field" type="text" placeholder="Masukkan bidang Anda" required/>
+        </div>
+        <div>
+          <label for="date">Tanggal:</label>
+          <input id="date" type="date" required/>
+        </div>
+        <div>
+          <label for="time">Waktu:</label>
+          <input id="time" type="time" required/>
+        </div>
+        <button type="submit">Pesan</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
